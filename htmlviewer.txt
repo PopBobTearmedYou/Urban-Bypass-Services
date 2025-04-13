@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf8;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 32px;
+      margin-right: 10px;
+    }
+    .logo span {
+      font-weight: bold;
+      color: #ec007c;
+    }
+    nav svg, .search-icon svg {
+      height: 24px;
+      width: 24px;
+    }
+    main {
+      padding: 2rem;
+    }
+    .title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ec007c;
+    }
+    .subtitle {
+      font-size: 1.5rem;
+      font-family: cursive;
+      margin-top: -1.2rem;
+      color: #532727;
+    }
+    .status, .balance, .customer-service, .rates {
+      margin-top: 1.5rem;
+    }
+    .status-time {
+      font-weight: bold;
+      color: green;
+      text-decoration: underline dotted;
+    }
+    .rates ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .rates ul li::before {
+      content: '\25CF';
+      color: #2f002e;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    .captcha-init {
+      position: fixed;
+      bottom: 80px;
+      left: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .captcha-btn {
+      position: fixed;
+      bottom: 30px;
+      left: 20px;
+      background-color: #ec007c;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .captcha-btn:hover {
+      background-color: #b2005f;
+    }
+    footer {
+      margin-top: 5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <svg viewBox="0 0 100 80" width="30" height="30">
+        <rect width="100" height="10"></rect>
+        <rect y="30" width="100" height="10"></rect>
+        <rect y="60" width="100" height="10"></rect>
+      </svg>
+    </nav>
+    <div class="logo">
+      <img src="https://img.icons8.com/ios/50/globe--v1.png" alt="Globe Icon">
+      <span>URBAN S.S</span>
+    </div>
+    <div class="search-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    </div>
+  </header>
+
+  <main>
+    <div class="title">URBAN <span class="subtitle">SPAM SERVICES</span></div>
+
+    <div class="status">
+      status : <span class="status-time">00:00 / 0</span>
+    </div>
+
+    <div class="balance">
+      Balance : 0 <br>(₱)
+    </div>
+
+    <div class="customer-service">
+      <small style="color: #888;">STILL ON BETA TEST BUT RELIABLE, THANKS FOR THE SUPPORT!
+
+    </div>
+
+    <div class="rates">
+      <ul>
+        <li>RATES: 55₱/1$ / 59 MINUTES</li>
+        <li>100₱/2$ / 3 HOURS</li>
+        <li>200₱/3$ / 6 HOURS</li>
+        <li>UNAVAILABLE /?/?</li>
+        <li>UNAVAILABLE /?/?</li>
+        <li>UNAVAILABLE /?/?</li>
+      </ul>
+    </div>
+  </main>
+
+  <div class="captcha-init">Initialize Captcha bypass</div>
+  <button class="captcha-btn" onclick="alert('Not enough funds, please transfer funds or buy them.')">
+    ▶ Start
+  </button>
+
+  <footer>
+    &copy; 2024 URBAN services. All rights reserved
+  </footer>
+</body>
+</html>
